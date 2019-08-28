@@ -24,6 +24,8 @@ defmodule HiyokoWeb do
       import Plug.Conn
       import HiyokoWeb.Gettext
       alias HiyokoWeb.Router.Helpers, as: Routes
+
+      import Phoenix.LiveView.Controller, only: [live_render: 3]
     end
   end
 
@@ -42,6 +44,8 @@ defmodule HiyokoWeb do
       import HiyokoWeb.ErrorHelpers
       import HiyokoWeb.Gettext
       alias HiyokoWeb.Router.Helpers, as: Routes
+
+      import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
     end
   end
 
@@ -50,6 +54,8 @@ defmodule HiyokoWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+
+      import Phoenix.LiveView.Router
     end
   end
 

@@ -10,6 +10,7 @@ use Mix.Config
 # Configures the endpoint
 config :hiyoko, HiyokoWeb.Endpoint,
   url: [host: "localhost"],
+  live_view: [signing_salt: "E6Z3sOwR+YgZMBfa09wGv8LLmYO4VTN8"],
   secret_key_base: "ahi18us3wO+nsJcH4BLEdWYwHP1IYij+NgMIuWpOaRAc2S3UNdpNxjSe1w4bfbS5",
   render_errors: [view: HiyokoWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Hiyoko.PubSub, adapter: Phoenix.PubSub.PG2]

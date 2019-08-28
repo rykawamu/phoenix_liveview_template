@@ -1,6 +1,7 @@
 defmodule HiyokoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :hiyoko
 
+  socket "/live", Phoenix.LiveView.Socket
   socket "/socket", HiyokoWeb.UserSocket,
     websocket: true,
     longpoll: false
